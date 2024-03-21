@@ -1,0 +1,22 @@
+[
+    {
+        "name": "sign-in",
+        "path": "/account/sign-in.html",
+        "authorized": true
+    },
+    {
+        "name": "sign-up",
+        "path": "/account/sign-up.html",
+        "authorized": true
+    },
+    {
+        "name": "home",
+        "path": "/home.html",
+        "authorized": true
+    },
+    {
+        "name": "deletarContar",
+        "path": "deletar.html",
+        "authorized": false
+    }
+]

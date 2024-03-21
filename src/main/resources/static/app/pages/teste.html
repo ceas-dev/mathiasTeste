@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Email</title>
+</head>
+<body>
+    <form id="emailForm">
+        <label for="to">Para:</label>
+        <input type="email" id="to" name="to" required><br><br>
+        <label for="subject">Assunto:</label>
+        <input type="text" id="subject" name="subject" required><br><br>
+        <label for="body">Mensagem:</label><br>
+        <textarea id="body" name="body" rows="4" required></textarea><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+            const to = formData.get('to');
+            const subject = formData.get('subject');
+            const body = formData.get('body');
+
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "seuemail@gmail.com",
+                Password: "sua_senha",
+                To: to,
+                From: "seuemail@gmail.com",
+                Subject: subject,
+                Body: body
+            }).then(function(message) {
+                alert("E-mail enviado com sucesso!");
+                console.log(message);
+            });
+        });
+    </script>
+</body>
+</html>

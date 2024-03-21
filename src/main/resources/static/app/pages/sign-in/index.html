@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/sign-in.css">
+  <link rel="stylesheet" href="../../global/css/pages.css">
+</head>
+
+<body>
+  <div class="d-block mt-3">
+
+    <h3 class="text-center mb-3">Mathias</h3>
+
+    <div class="login-form">
+
+      <h6 class="mb-3 mt-3 text-center">Faça o login com seu e-mail e senha de administrador</h6>
+
+      <form id="form-login">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="input-email" type="email" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <input id="input-password" type="password" class="form-control" required>
+        </div>
+
+        <div class="text-center">
+          <div class="d-flex justify-content-center align-items-center">
+            <div id="div-spinner" class="spinner-border text-primary" role="status" style="display: none;"></div>
+          </div>
+          <button id="btn-sign-in" type="submit" class="btn btn-primary btn-block mt-3">Entrar</button>
+          <div id="div-alert" class="alert alert-danger mt-3" role="alert" style="display: none;"></div>
+        </div>
+
+        <hr class="border-bottom border-gray">
+
+        <div class="text-center">
+          <button id="btn-recouvery" type="button" class="btn btn-secondary">Recuperar conta</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</body>
+<script type="module" src="js/sign-in.js"></script>
+
+</html>

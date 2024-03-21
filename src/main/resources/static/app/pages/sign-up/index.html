@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/sign-up.css">
+  <link rel="stylesheet" href="../../global/css/pages.css">
+</head>
+
+<body>
+  <div class="d-block mt-3">
+    <h3 class="text-center mb-3">Mathias</h3>
+
+    <div class="login-form">
+        <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" fill="red" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+          </svg>
+      <h6 class="mb-3 mt-3 text-center">Faça o cadastro de um administrador usando nome, email e senha</h6>
+    
+      <form id="form-login">
+
+        <div class="form-group">
+            <label for="name">Nome</label>
+            <input id="input-name" type="name" class="form-control" required>
+          </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="input-email" type="email" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <input id="input-password" type="password" class="form-control" required>
+        </div>
+
+        <button id="btn-sign-up" type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+</body>
+<script type="module" src="js/sign-up.js"></script>
+</html>
