@@ -1,4 +1,4 @@
-import { signInToken, sendSign } from '../../../services/firebase-service.js';
+import { signInToken } from '../../../services/firebase-service.js';
 import { verifyToken, generateLinkEmailResetPassword,   } from '../../../services/app-service.js';
 import { saveToken } from '../../../utils/token-handler.js';
 
